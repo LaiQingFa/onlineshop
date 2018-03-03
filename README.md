@@ -19,3 +19,5 @@
 * onlineshop-manager
 	后台管理工程，这是一个聚合工程.依赖于onlineshop-common,同时四个工程onlineshop-pojo(jar包),
 	onlineshop-mapper(jar包),onlineshop-service(jar包),onlineshop-controller(war包)继承于这个聚合工程.
+* onlineshop-manager-pojo  	
+	maven module 工程内部一个模块，可以打成一个jar包,不需要修改，onlineshop-manager-pojo模块不依赖任何jar包
