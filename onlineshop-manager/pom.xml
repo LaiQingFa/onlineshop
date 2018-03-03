@@ -22,5 +22,6 @@
   </dependencies>
   <modules>
   	<module>onlineshop-manager-pojo</module>
+  	<module>onlineshop-manager-mapper</module>
   </modules>
 </project>
