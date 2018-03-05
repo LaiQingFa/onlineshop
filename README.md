@@ -21,3 +21,7 @@
 	onlineshop-mapper(jar包),onlineshop-service(jar包),onlineshop-controller(war包)继承于这个聚合工程.
 * onlineshop-manager-pojo  	
 	maven module 工程内部一个模块，可以打成一个jar包,不需要修改，onlineshop-manager-pojo模块不依赖任何jar包
+* onlineshop-manager-mapper  
+    onlineshop-manager工程内部一个模块，依赖于onlineshop-manager-pojo  
+* onlineshop-manager-service  
+	onlineshop-manager工程内部一个模块，依赖于onlineshop-manager-manager
