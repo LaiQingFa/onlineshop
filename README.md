@@ -24,4 +24,6 @@
 * onlineshop-manager-mapper  
     onlineshop-manager工程内部一个模块，依赖于onlineshop-manager-pojo  
 * onlineshop-manager-service  
-	onlineshop-manager工程内部一个模块，依赖于onlineshop-manager-manager
+	onlineshop-manager工程内部一个模块，依赖于onlineshop-manager-manager  
+* onlineshop-manager-web  
+	onlineshop-manager工程内部一个模块，依赖于onlineshop-manager-service,注意：创建的时候会报错，原因需要在webapp下创建文件夹WEB-INF并在这个文件夹下创建web.xml文件

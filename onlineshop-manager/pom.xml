@@ -24,5 +24,6 @@
   	<module>onlineshop-manager-pojo</module>
   	<module>onlineshop-manager-mapper</module>
   	<module>onlineshop-manager-service</module>
+  	<module>onlineshop-manager-web</module>
   </modules>
 </project>
