@@ -10,6 +10,9 @@
         <dependent-module archiveName="onlineshop-manager-mapper-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/onlineshop-manager-mapper/onlineshop-manager-mapper">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="onlineshop-manager-pojo-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/onlineshop-manager-pojo/onlineshop-manager-pojo">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <dependent-module archiveName="onlineshop-common-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/onlineshop-common/onlineshop-common">
             <dependency-type>uses</dependency-type>
         </dependent-module>

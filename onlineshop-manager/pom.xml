@@ -26,4 +26,19 @@
   	<module>onlineshop-manager-service</module>
   	<module>onlineshop-manager-web</module>
   </modules>
+  
+  <build>
+		<!-- 配置tomcat插件,不需要再安装tomcat，而是使用maven中的tomcat插件来启动项目 -->
+		<plugins>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<configuration>
+					<port>8080</port>
+					<path>/</path>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+  
 </project>

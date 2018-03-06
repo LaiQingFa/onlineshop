@@ -27,3 +27,24 @@
 	onlineshop-manager工程内部一个模块，依赖于onlineshop-manager-manager  
 * onlineshop-manager-web  
 	onlineshop-manager工程内部一个模块，依赖于onlineshop-manager-service,注意：创建的时候会报错，原因需要在webapp下创建文件夹WEB-INF并在这个文件夹下创建web.xml文件
+
+	
+### 测试聚合工程onlineshop-manager  
+	在onlineshop-manager-web的webapp下创建一个index.jsp，在onlineshop-manager中添加maven的tomcat7插件。  
+	1、需要把taotao-parent工程安装到本地仓库。Install  
+	右键  run asmaven Install  
+	2、需要把taotao-common安装到本地仓库。  
+	启动工程：右键 聚合工程onlineshop-manager-->run as-->maven build  
+	使用maven命令：  
+	clean tomcat7:run
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
