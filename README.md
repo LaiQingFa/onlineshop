@@ -7,7 +7,7 @@
 * Redis（缓存服务器）
 * Solr（搜索）
 * httpclient（调用系统服务）
-* Mysql
+* Mysql5.7
 * Nginx（web服务器）
 
 ## 建立的工程
@@ -37,7 +37,9 @@
 	启动工程：右键 聚合工程onlineshop-manager-->run as-->maven build  
 	使用maven命令：  
 	clean tomcat7:run
-
+	
+##数据库  
+	在互联网行业的项目中尽可能的减少表的管理查询。使用冗余解决表的关联问题。有利于分库分表，大量的关联可能导致数据库奔溃
 	
 	
 	
