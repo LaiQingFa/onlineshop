@@ -38,10 +38,31 @@
 	使用maven命令：  
 	clean tomcat7:run
 	
-##数据库  
+## 数据库  
 	在互联网行业的项目中尽可能的减少表的管理查询。使用冗余解决表的关联问题。有利于分库分表，大量的关联可能导致数据库奔溃，多保持单表查询，便于以后分库分表  
 	Sku：最小库存量单位。就是商品id。就是商品最细力度的划分。每个sku都唯一对应一款商品，商品的颜色、配置都已经唯一确定
-###spring与springmvc父子容器	
+	
+## 整合的思路
+### Dao层
+	使用mybatis框架。创建SqlMapConfig.xml。
+	创建一个applicationContext-dao.xml
+	1、配置数据源
+	2、需要让spring容器管理SqlsessionFactory，单例存在。
+	3、把mapper的代理对象放到spring容器中。使用扫描包的方式加载mapper的代理对象。
+### Service层
+	1、事务管理
+	2、需要把service实现类对象放到spring容器中管理
+### 表现层
+	处理器，适配器，视图解析器  三大组件，不可见的
+	1、配置注解驱动
+	2、配置视图解析器
+	3、需要扫描controller
+### Web.xml
+	1、spring容器的配置
+	2、Springmvc前端控制器的配置
+	3、Post乱码过滤器
+
+### spring与springmvc父子容器	
 	Spring容器（service,dao）   子容器springmvc(controller),子容器可以访问父容器中的对象，父容器不能访问子容器对象
 	
 	
