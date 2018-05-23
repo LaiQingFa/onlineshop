@@ -8,7 +8,6 @@
   <groupId>com.onlineshop</groupId>
   <artifactId>onlineshop-common</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
   <!-- jar包的依赖 -->
 	<dependencies>
 		<!-- 时间操作组件 -->

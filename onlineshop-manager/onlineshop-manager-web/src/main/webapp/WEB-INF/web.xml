@@ -2,7 +2,7 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-	id="taotao" version="2.5">
+	id="onlineshop" version="2.5">
 	<display-name>onlineshop-manager</display-name>
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
@@ -12,7 +12,7 @@
 		<welcome-file>default.htm</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
-	<!-- 加载spring容器 -->
+<!-- 加载spring容器 -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>classpath:spring/applicationContext-*.xml</param-value>
@@ -45,8 +45,8 @@
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>onlineshop-manager</servlet-name>		
-		<!-- /：会拦截所有请求包括静态资源。需要在springmvc.xml中添加静态资源的映射 -->
+		<servlet-name>onlineshop-manager</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
+
 </web-app>

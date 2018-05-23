@@ -9,26 +9,23 @@
   <artifactId>onlineshop-manager</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-  
   <!-- 依赖管理 -->
-  <dependencies>
-	  <dependency>
-	  <!-- 实际依赖 -->
-		  <groupId>com.onlineshop</groupId>
-		  <artifactId>onlineshop-common</artifactId>
-		  <version>0.0.1-SNAPSHOT</version>
-	  </dependency>
+	<dependencies>
+		<dependency>
+			<groupId>com.onlineshop</groupId>
+			<artifactId>onlineshop-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
   
-  </dependencies>
-  <modules>
-  	<module>onlineshop-manager-pojo</module>
-  	<module>onlineshop-manager-mapper</module>
-  	<module>onlineshop-manager-service</module>
-  	<module>onlineshop-manager-web</module>
-  </modules>
-  
-  <build>
-		<!-- 配置tomcat插件,不需要再安装tomcat，而是使用maven中的tomcat插件来启动项目 -->
+	<modules>
+		<module>onlineshop-manager-pojo</module>
+		<module>onlineshop-manager-mapper</module>
+		<module>onlineshop-manager-service</module>
+		<module>onlineshop-manager-web</module>
+	</modules>
+	<build>
+		<!-- 配置插件 -->
 		<plugins>
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
@@ -40,5 +37,5 @@
 			</plugin>
 		</plugins>
 	</build>
-  
+	
 </project>

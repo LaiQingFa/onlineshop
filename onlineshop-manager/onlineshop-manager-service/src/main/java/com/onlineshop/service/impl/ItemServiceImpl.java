@@ -11,6 +11,13 @@ import com.onlineshop.pojo.TbItemExample;
 import com.onlineshop.pojo.TbItemExample.Criteria;
 import com.onlineshop.service.ItemService;
 
+/**
+ * 商品管理Service
+ * <p>Title: ItemServiceImpl</p>
+ * <p>Description: </p>
+ * <p>Company: www.itcast.com</p> 
+ * @version 1.0
+ */
 @Service
 public class ItemServiceImpl implements ItemService {
 
