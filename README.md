@@ -64,6 +64,16 @@
 
 ### spring与springmvc父子容器	
 	Spring容器（service,dao）   子容器springmvc(controller),子容器可以访问父容器中的对象，父容器不能访问子容器对象
+
+## 测试整合
+	使用maven的tomcat插件时debug
+	
+## 商品列表的实现
+### 使用pagehelper分页插件
+	返回Json数据，easyui有一个特点，页面不刷新，都是ajax请求。
+	easyui-datagrid默认带参数page和rows。
+	官方的分页插件对逆向工程生成的代码支持不好，不能对有查询条件的查询分页
+
 	
 	
 	
